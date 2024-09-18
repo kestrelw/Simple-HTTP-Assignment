@@ -6,7 +6,6 @@
   <title>Rich Client!</title>
 
 </head>
-<>
 
 <h1>"Rich" Client for <i>Simple HTTP Server</i></h1>
 <h2>View the "Hello" Message</h2>
@@ -25,7 +24,8 @@
 
 <h2>A Dank Meme ...</h2>
 
-<img src="" alt="" width="200" id="img-time"><!-- call img display -->
+<!-- <div id="imgFile">???</div> -->
+<img src="./dankmemes" alt="whes img" width="200" id="imgFile">
   
 </body>
 <script>
@@ -67,14 +67,6 @@ const timeCallback = json => {
 };
 
 btnTime.onclick = () => getJsonFetch(timeJSONURL, timeCallback);
-
-
-const outputImg = document.querySelector("#output-img");
-
-const imgJSONURL = "/dankmemes";
-const imgCallback = json => {
-  outputTime.innerHTML = json.time || "No <kbd>.message</kbd> value found!";
-};
 
 </script>
 </html>
